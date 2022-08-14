@@ -4,17 +4,14 @@
 // 32679 -> 6
 
 
-Console.WriteLine("Введи число: ");
-int number = int.Parse(Console.ReadLine());
-// int anyNumber = Convert.ToInt32(Console.ReadLine());
-// string anyNumberText = Convert.ToString(anyNumber);
-if (number > 100)
+Console.Write("Введи число: ");
+int anyNumber = int.Parse(Console.ReadLine());
+string anyNumberText = Convert.ToString(anyNumber);
+if (anyNumberText.Length > 2)
 {
-    int thirddigit = number % 10;
-    Console.WriteLine($"третья цифра -> {thirddigit}");
+    Console.WriteLine("третья цифра -> " + anyNumberText[2]);
 }
 else
 {
     Console.WriteLine("-> третьей цифры нет");
 }
-
